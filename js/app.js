@@ -28,14 +28,13 @@ function showAlert(message, type = 'success') {
 async function loadMahasiswa(keyword = '') {
 
     // tampilkan indikator loading
-    tabelBody.innerHTML = 
-        <tr> 
-                <td colspan="8" style="text-allign: center; padding:
-                20px; color: var(--text-muted);">
-                    Memuat data dari server...
-                </td>
-        </tr>
-;
+   tabelBody.innerHTML = `
+    <tr>
+        <td colspan="8" style="text-align: center; padding: 20px; color: var(--text-muted);">
+            Memuat data dari server...
+        </td>
+    </tr>
+`;
     try {
 
         //Percobaan 6-1 Langkah 4 susun url request
